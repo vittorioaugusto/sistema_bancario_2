@@ -9,11 +9,11 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
 
     if (empty($cpf)) {
         $_SESSION['msg_login'] = "<p class='error'>Preencha seu cpf</p>";
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     } elseif (empty($senha)) {
         $_SESSION['msg_login'] = "<p class='error'>Preencha sua senha</p>";
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     } else {
         $sql_code = "SELECT * FROM usuarios WHERE cpf = '$cpf'";
