@@ -39,7 +39,7 @@ if (empty($cpf_error)) {
         $query_incluir = mysqli_query($conexao, $incluir);
 
         if ($query_incluir) {
-            echo "<script>alert('Cadastro realizado com sucesso.'); window.location.href='login.php';</script>";
+            echo "<script>alert('Cadastro realizado com sucesso.'); window.location.href='index.php';</script>";
             exit();
         } else {
             die("Erro ao inserir dados: " . mysqli_error($conexao));

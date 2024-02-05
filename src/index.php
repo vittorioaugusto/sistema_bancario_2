@@ -37,12 +37,12 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
                 exit();
             } else {
                 $_SESSION['msg_login'] = "<p class='error'>Falha ao logar! CPF ou senha incorretos</p>";
-                header("Location: login.php");
+                header("Location: index.php");
                 exit();
             }
         } else {
             $_SESSION['msg_login'] = "<p class='error'>Falha ao logar! CPF ou senha incorretos</p>";
-            header("Location: login.php");
+            header("Location: index.php");
             exit();
         }
     }

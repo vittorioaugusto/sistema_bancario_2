@@ -100,7 +100,7 @@ if (isset($_POST['cpf']) && isset($_POST['nova_senha'])) {
 
                 <div class="botao_senha">
                     <button type="submit" value="Atualizar Senha">Atualizar Senha</button><br><br>
-                    <a href="login.php">Voltar</a>
+                    <a href="index.php">Voltar</a>
                 </div>
             </form>
         </div>

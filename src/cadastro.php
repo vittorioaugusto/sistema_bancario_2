@@ -93,7 +93,7 @@ if (!isset($_SESSION)) {
                 </div>
                 <div class="cadastro">
                     Já tem uma conta?
-                    <a href="login.php">
+                    <a href="index.php">
                         Logar
                     </a>
                 </div>
