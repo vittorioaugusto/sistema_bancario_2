@@ -11,10 +11,6 @@ body {
     flex-direction: column;
     height: 100vh;
     background-image: url("img/background.jpg");
-  }
-
-header{
-    width: 100%;
 }
 
 .bg_home{
@@ -185,7 +181,8 @@ header{
     }
 }
 
-.hero{
+
+.account{
     color: $white-normal;
     max-height: 100vh;
     display: flex;
@@ -232,7 +229,7 @@ header{
 }
 
 @media screen and (max-width: 768px){
-    .hero{
+    .account{
         min-height: 100vh;
 
         h1{
@@ -250,18 +247,10 @@ header{
         font-size: larger;
     }
 
-    .hero_links{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px;
-    }
-
 }
 
 @media screen and (max-width: 480px){
-    .hero{
+    .account{
         h1{
             font-size: 36px;
         }
@@ -615,7 +604,6 @@ header{
     border-radius: 10px;
     text-align: center;
     color: $primary-normal;
-    text-align: center;
     overflow: hidden; 
 }
 
@@ -1126,5 +1114,3 @@ header{
 .custom-checkbox:checked ~ .checkmark:after {
     animation: checkAnim 0.2s forwards;
 }
-
-

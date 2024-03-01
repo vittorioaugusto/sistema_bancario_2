@@ -40,10 +40,8 @@ if (isset($_POST['cpf']) && isset($_POST['nova_senha'])) {
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redefinir a Senha</title>
-
+    
     <!-- Biblioteca fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,6 +54,7 @@ if (isset($_POST['cpf']) && isset($_POST['nova_senha'])) {
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Redefinir a Senha</title>
 </head>
 
 <body>

@@ -1,13 +1,12 @@
 <?php
 session_start();
+include('conexao.php');
 
 // Verifique se o usuário está logado, redirecione para a página de login se não estiver
 if (!isset($_SESSION['id'])) {
     header("Location: index.php");
     exit();
 }
-
-include('conexao.php');
 
 // Recupere as informações do usuário a partir da sessão
 $id = $_SESSION['id'];
@@ -41,7 +40,6 @@ $saldo = $_SESSION['saldo'];
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="style.css">
-
     <title>Seu Perfil</title>
 </head>
 
@@ -58,7 +56,7 @@ $saldo = $_SESSION['saldo'];
                 <a href="transferir.php" class="nav-link" onclick="changeColor(this)"><button>Transferir</button></a>
                 <a href="extrato.php" class="nav-link" onclick="changeColor(this)"><button>Extrato</button></a>
                 <a href="perfil.php" class="nav-link" onclick="changeColor(this)"><button id="butao_selecionado">Perfil</button></a>
-                <a href="javascript:void(0);" onclick="confirmarSaida();"><button>Sair</button></a>
+                <a href="javascript:void(0);" onclick="confirmarSaida();"><button title="Sair"><i class="fa fa-sign-out" aria-hidden="true"></i></button></a>
             </div>
 
             <div class="navbar_toggle">

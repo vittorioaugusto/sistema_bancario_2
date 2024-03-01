@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a href="atualizar_limite.php" class="nav-link" onclick="changeColor(this)"><button id="butao_selecionado">Atualizar Limite</button></a>
                 <a href="extrato.php" class="nav-link" onclick="changeColor(this)"><button>Extrato</button></a>
                 <a href="perfil.php" class="nav-link" onclick="changeColor(this)"><button>Perfil</button></a>
-                <a href="javascript:void(0);" onclick="confirmarSaida();"><button>Sair</button></a>
+                <a href="javascript:void(0);" onclick="confirmarSaida();"><button title="Sair"><i class="fa fa-sign-out" aria-hidden="true"></i></button></a>
             </div>
 
             <div class="navbar_toggle">

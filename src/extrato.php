@@ -7,12 +7,11 @@ $usuario_id = $_SESSION['id'];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Extrato</title>
 
   <!-- Biblioteca fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +26,7 @@ $usuario_id = $_SESSION['id'];
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <link rel="stylesheet" href="style.css">
+  <title>Extrato</title>
 
 </head>
 
@@ -43,7 +43,7 @@ $usuario_id = $_SESSION['id'];
         <a href="transferir.php" class="nav-link" onclick="changeColor(this)"><button>Transferir</button></a>
         <a href="extrato.php" class="nav-link" onclick="changeColor(this)"><button id="butao_selecionado">Extrato</button></a>
         <a href="perfil.php" class="nav-link" onclick="changeColor(this)"><button>Perfil</button></a>
-        <a href="javascript:void(0);" onclick="confirmarSaida();"><button>Sair</button></a>
+        <a href="javascript:void(0);" onclick="confirmarSaida();"><button><i class="fa fa-sign-out" aria-hidden="true"></i></button></a>
       </div>
 
       <div class="navbar_toggle">
@@ -104,7 +104,7 @@ $usuario_id = $_SESSION['id'];
 
     </div>
   </div>
-  
+
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 

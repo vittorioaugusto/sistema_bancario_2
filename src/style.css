@@ -20,10 +20,6 @@ body {
   background-image: url("img/background.jpg");
 }
 
-header {
-  width: 100%;
-}
-
 .bg_home {
   position: relative;
 }
@@ -181,7 +177,7 @@ header {
     transform: translateY(-8px) scale(1.1);
   }
 }
-.hero {
+.account {
   color: #fff;
   max-height: 100vh;
   display: flex;
@@ -190,13 +186,13 @@ header {
   justify-content: center;
   padding: 10px;
 }
-.hero h1 {
+.account h1 {
   text-align: center;
   line-height: 150%;
   max-width: 940px;
   font-size: 64px;
 }
-.hero p {
+.account p {
   text-align: center;
   margin: 14px 0;
 }
@@ -224,30 +220,23 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
-  .hero {
+  .account {
     min-height: 100vh;
   }
-  .hero h1 {
+  .account h1 {
     font-size: 64px;
     padding: 0 14px;
     width: 100%;
   }
-  .hero h2 {
+  .account h2 {
     font-size: 14px;
   }
   .button_contact {
     font-size: larger;
   }
-  .hero_links {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-  }
 }
 @media screen and (max-width: 480px) {
-  .hero h1 {
+  .account h1 {
     font-size: 36px;
   }
 }
@@ -595,7 +584,6 @@ header {
   border-radius: 10px;
   text-align: center;
   color: #011640;
-  text-align: center;
   overflow: hidden;
 }
 

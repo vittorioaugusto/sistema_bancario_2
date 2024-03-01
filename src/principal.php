@@ -13,7 +13,7 @@ include('sacar.php');
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@ include('sacar.php');
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Sistema Bancário - FinTechGuard</title>
+    <title>Home page</title>
 </head>
 
 <body>
@@ -50,71 +50,70 @@ include('sacar.php');
                     <a href="transferir.php" class="nav-link" onclick="changeColor(this)"><button>Transferir</button></a>
                     <a href="extrato.php" class="nav-link" onclick="changeColor(this)"><button>Extrato</button></a>
                     <a href="perfil.php" class="nav-link" onclick="changeColor(this)"><button>Perfil</button></a>
-                    <a href="javascript:void(0);" onclick="confirmarSaida();"><button>Sair</button></a>
+                    <a href="javascript:void(0);" onclick="confirmarSaida();"><button title="Sair"><i class="fa fa-sign-out" aria-hidden="true"></i></button></a>
                 </div>
 
                 <div class="navbar_toggle">
                     <button class="toggle_button">&#9776;</button>
                 </div>
             </nav>
-
-            <main class="hero container" data-aos="fade-up" data-aos-delay="100">
-                <div class="detalhes_conta clearfix">
-                    <h2> Bem vindo (a): <?php echo $_SESSION['nome']; ?></h2>
-                    <h1>Detalhes da Conta</h1><br>
-                    <h3>Nome do Cliente: <?php echo $_SESSION['nome']; ?></h3>
-                    <h3>Seu saldo na conta é de: R$<?php echo $_SESSION['saldo']; ?></h3><br>
-                    <hr>
-
-                    <div class="informacoes_conta">
-
-                        <div class="form_depositar">
-                            <h2>Faça o Depósito</h2><br>
-                            <form action="deposito.php" method="POST">
-                                <div class="input_container_depositar">
-                                    <input type="number" name="valor_deposito" id="valor" class="inputDepositar" placeholder="" required>
-                                    <label class="labelDepositar" for="valor">
-                                        Valor:
-                                    </label>
-                                </div>
-                                <div class="botao_conta">
-                                    <button type="submit" value="depositar">Depositar</button>
-                                </div>
-                                <?php
-                                if (isset($_SESSION['msg_deposito'])) {
-                                    echo $_SESSION['msg_deposito'];
-                                    unset($_SESSION['msg_deposito']);
-                                }
-                                ?>
-                            </form>
-                        </div>
-
-                        <div class="form_sacar">
-                            <h2>Faça o Saque</h2><br>
-                            <form action="sacar.php" method="POST" id="form_login">
-                                <div class="input_container_sacar">
-                                    <input type="number" name="valor_sacado" class="inputSacar" placeholder="" required>
-                                    <label class="labelSacar">
-                                        Valor:
-                                    </label>
-                                </div>
-                                <div class="botao_conta">
-                                    <button type="submit" value="sacar">Sacar</button>
-                                </div>
-                                <?php
-                                if (isset($_SESSION['msg_sacar'])) {
-                                    echo $_SESSION['msg_sacar'];
-                                    unset($_SESSION['msg_sacar']);
-                                }
-                                ?>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </main>
-
         </header>
+
+        <div class="account" data-aos="fade-up" data-aos-delay="100">
+            <div class="detalhes_conta clearfix">
+                <h2> Bem vindo (a): <?php echo $_SESSION['nome']; ?></h2>
+                <h1>Detalhes da Conta</h1><br>
+                <h3>Nome do Cliente: <?php echo $_SESSION['nome']; ?></h3>
+                <h3>Seu saldo na conta é de: R$<?php echo $_SESSION['saldo']; ?></h3><br>
+                <hr>
+
+                <div class="informacoes_conta">
+
+                    <div class="form_depositar">
+                        <h2>Faça o Depósito</h2><br>
+                        <form action="deposito.php" method="POST">
+                            <div class="input_container_depositar">
+                                <input type="number" name="valor_deposito" id="valor" class="inputDepositar" placeholder="" required>
+                                <label class="labelDepositar" for="valor">
+                                    Valor:
+                                </label>
+                            </div>
+                            <div class="botao_conta">
+                                <button type="submit" value="depositar">Depositar</button>
+                            </div>
+                            <?php
+                            if (isset($_SESSION['msg_deposito'])) {
+                                echo $_SESSION['msg_deposito'];
+                                unset($_SESSION['msg_deposito']);
+                            }
+                            ?>
+                        </form>
+                    </div>
+
+                    <div class="form_sacar">
+                        <h2>Faça o Saque</h2><br>
+                        <form action="sacar.php" method="POST" id="form_login">
+                            <div class="input_container_sacar">
+                                <input type="number" name="valor_sacado" class="inputSacar" placeholder="" required>
+                                <label class="labelSacar">
+                                    Valor:
+                                </label>
+                            </div>
+                            <div class="botao_conta">
+                                <button type="submit" value="sacar">Sacar</button>
+                            </div>
+                            <?php
+                            if (isset($_SESSION['msg_sacar'])) {
+                                echo $_SESSION['msg_sacar'];
+                                unset($_SESSION['msg_sacar']);
+                            }
+                            ?>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>

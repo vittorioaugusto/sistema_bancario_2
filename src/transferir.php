@@ -102,12 +102,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transferência de Dinheiro</title>
 
     <!-- Biblioteca fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,6 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <title>Transferência de Dinheiro</title>
 </head>
 
 <body>
@@ -138,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <a href="atualizar_limite.php" class="nav-link" onclick="changeColor(this)"><button>Atualizar Limite</button></a>
                 <a href="extrato.php" class="nav-link" onclick="changeColor(this)"><button>Extrato</button></a>
                 <a href="perfil.php" class="nav-link" onclick="changeColor(this)"><button>Perfil</button></a>
-                <a href="javascript:void(0);" onclick="confirmarSaida();"><button>Sair</button></a>
+                <a href="javascript:void(0);" onclick="confirmarSaida();"><button title="Sair"><i class="fa fa-sign-out" aria-hidden="true"></i></button></a>
             </div>
 
             <div class="navbar_toggle">
