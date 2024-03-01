@@ -79,6 +79,8 @@ header{
 .navbar_links {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
 
 .navbar_links button{
@@ -378,12 +380,21 @@ header{
 @media only screen and (max-width: 768px) {
     .tela_login {
         position: absolute;
-       
     }
-
 }
 
-  
+@media only screen and (max-width: 403px) {
+    .tela_login {
+        width: 350px; 
+    }
+}
+
+@media only screen and (max-width: 358px) {
+    .tela_login {
+        width: 300px;   
+    }
+}
+
 
 
 /* esqueci_senha.php */
@@ -483,7 +494,12 @@ header{
     .tela_esqueci_senha {
         position: absolute;
     }
+}
 
+@media only screen and (max-width: 368px) {
+    .tela_esqueci_senha {
+        width: 300px;
+    }
 }
 
 
@@ -577,6 +593,18 @@ header{
         position: absolute;
     }
 
+}
+
+@media only screen and (max-width: 403px) {
+    .tela_cadastro {
+        width: 350px; 
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .tela_cadastro {
+        width: 300px;  
+    }
 }
 
 
@@ -975,13 +1003,18 @@ header{
     background-color: #011640;
 }
 
-
-
-.footer{
-    display: flex;
+.footer_text{
+    text-align: center;
     align-items: center;
-    justify-content: center;
     color: $primary-normal;
+}
+
+@media only screen and (max-width: 748px) {
+    .footer_text {
+        width: 300px;
+        height: auto;
+    }
+
 }
 
 

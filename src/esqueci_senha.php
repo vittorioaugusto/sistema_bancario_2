@@ -36,7 +36,7 @@ if (isset($_POST['cpf']) && isset($_POST['nova_senha'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">

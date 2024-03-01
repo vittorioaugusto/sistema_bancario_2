@@ -85,6 +85,8 @@ header {
 .navbar_links {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 0;
 }
 
 .navbar_links button {
@@ -366,6 +368,16 @@ header {
     position: absolute;
   }
 }
+@media only screen and (max-width: 403px) {
+  .tela_login {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 358px) {
+  .tela_login {
+    width: 300px;
+  }
+}
 /* esqueci_senha.php */
 .tela_esqueci_senha {
   background-color: #F2F2F2;
@@ -469,6 +481,11 @@ header {
     position: absolute;
   }
 }
+@media only screen and (max-width: 368px) {
+  .tela_esqueci_senha {
+    width: 300px;
+  }
+}
 /* cadastro.php */
 .tela_cadastro {
   background-color: #F2F2F2;
@@ -561,6 +578,16 @@ header {
 @media only screen and (max-width: 768px) {
   .tela_cadastro {
     position: absolute;
+  }
+}
+@media only screen and (max-width: 403px) {
+  .tela_cadastro {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .tela_cadastro {
+    width: 300px;
   }
 }
 /* principal.php */
@@ -954,13 +981,18 @@ header {
   background-color: #011640;
 }
 
-.footer {
-  display: flex;
+.footer_text {
+  text-align: center;
   align-items: center;
-  justify-content: center;
   color: #011640;
 }
 
+@media only screen and (max-width: 748px) {
+  .footer_text {
+    width: 300px;
+    height: auto;
+  }
+}
 .coin:after {
   content: "$";
   display: inline-block;

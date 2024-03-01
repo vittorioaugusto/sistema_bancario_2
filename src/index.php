@@ -51,7 +51,7 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -132,7 +132,7 @@ if (isset($_POST['cpf']) && isset($_POST['senha'])) {
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer_text">
         <p>Copyright© 2024 | Projeto da Faculdade FPB - Todos os direitos reservados.</p>
     </footer>
 

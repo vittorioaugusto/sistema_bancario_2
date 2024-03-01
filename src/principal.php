@@ -45,10 +45,6 @@ include('sacar.php');
                     <h1>FinTechGuard</h1>
                 </div>
 
-                <div class="bem_vindo_nome">
-                    <h2> Bem vindo (a): <?php echo $_SESSION['nome']; ?></h2>
-                </div>
-
                 <div class="navbar_links">
                     <a href="principal.php" class="nav-link" onclick="changeColor(this)"><button id="butao_selecionado">Início</button></a>
                     <a href="transferir.php" class="nav-link" onclick="changeColor(this)"><button>Transferir</button></a>
@@ -64,7 +60,7 @@ include('sacar.php');
 
             <main class="hero container" data-aos="fade-up" data-aos-delay="100">
                 <div class="detalhes_conta clearfix">
-
+                    <h2> Bem vindo (a): <?php echo $_SESSION['nome']; ?></h2>
                     <h1>Detalhes da Conta</h1><br>
                     <h3>Nome do Cliente: <?php echo $_SESSION['nome']; ?></h3>
                     <h3>Seu saldo na conta é de: R$<?php echo $_SESSION['saldo']; ?></h3><br>

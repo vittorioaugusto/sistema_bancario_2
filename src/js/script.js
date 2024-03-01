@@ -8,16 +8,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let isMenuOpen = false;
 
-    toggleButton.addEventListener('click', function () {
-        isMenuOpen = !isMenuOpen;
-        navbarLinks.classList.toggle('active', isMenuOpen);
+    // script.js
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tenta acessar um elemento com id 'meuElemento'
+        var elemento = document.getElementById('meuElemento');
 
-        if (isMenuOpen) {
-            toggleButton.innerHTML = '&#10005;';
-        } else {
-            toggleButton.innerHTML = '&#9776;';
-        }
+        // Tenta adicionar um evento a esse elemento
+        elemento.addEventListener('click', function() {
+            // Alguma ação aqui
+        });
     });
+
 
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
